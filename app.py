@@ -1,4 +1,3 @@
-%%writefile app.py
 import streamlit as st
 import google.generativeai as genai
 from streamlit_webrtc import webrtc_streamer
