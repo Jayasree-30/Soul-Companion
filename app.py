@@ -79,7 +79,7 @@ for message in st.session_state.messages:
 # Voice input
 webrtc_ctx_audio = webrtc_streamer(
     key="speech-to-text",
-    mode=webrtc_streamer.WebRtcMode.SENDONLY,
+    mode="sendonly",
     audio_processor_factory=AudioProcessor,
     media_stream_constraints={"video": False, "audio": True},
 )
