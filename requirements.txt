@@ -1,4 +1,4 @@
 streamlit
 google-generativeai
-streamlit-webrtc
+streamlit-webrtc==0.47.0
 SpeechRecognition
