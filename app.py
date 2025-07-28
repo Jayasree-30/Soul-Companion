@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st
 import google.generativeai as genai
 from streamlit_webrtc import webrtc_streamer
@@ -104,7 +105,7 @@ if webrtc_ctx_audio.audio_processor:
 # Image capture
 webrtc_ctx_video = webrtc_streamer(
     key="video-capture",
-    mode=webrtc_streamer.WebRtcMode.SENDONLY,
+    mode="sendonly",
     video_processor_factory=VideoProcessor,
     media_stream_constraints={"video": True, "audio": False},
 )
