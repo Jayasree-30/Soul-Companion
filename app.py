@@ -60,7 +60,7 @@ if user_input := st.chat_input("Type your message here..."):
 
     try:
         # Create a Gemini model instance
-        model = genai.GenerativeModel('gemini-pro') # You can choose a different model if needed
+        model = genai.GenerativeModel('gemini-1.5-flash') # You can choose a different model if needed
         # Generate bot response using Gemini
         response = model.generate_content(user_input)
         bot_response = response.text
