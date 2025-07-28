@@ -31,7 +31,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
+st.title("AI Mental Health Chatbot")
 
 # Audio Processor class to handle audio frames
 class AudioProcessor:
@@ -55,9 +55,10 @@ class VideoProcessor:
 
 st.title("AI Mental Health Chatbot")
 
+
 # Configure the Gemini API key
 # Replace "YOUR_API_KEY" with your actual Gemini API key
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="AIzaSyCq4BPePiFRB24NKJ4mEjRGO0ZSvgdmU-8")
 
 # Personalized Greeting
 if 'username' not in st.session_state:
